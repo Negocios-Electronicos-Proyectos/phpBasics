@@ -15,4 +15,14 @@ echo "<br>";
 var_dump("Hola mundo");
 $numero=5.5; //No es necesario identificar el tipo de dato porque php lo asocia
 var_dump($numero);
+
+$login=False;
+
+var_dump($login);
+
+//Arreglos indexados
+$carrito=[];
+$edades=array();
+$carrito=['Plasma', 'Celular', 'Tablet','TV'];
+var_dump($carrito[1]);
 ?>
