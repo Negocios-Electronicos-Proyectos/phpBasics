@@ -13,16 +13,42 @@ print_r("Hola mundo 3");
 echo "<br>";
 
 var_dump("Hola mundo");
-$numero=5.5; //No es necesario identificar el tipo de dato porque php lo asocia
+echo "<br>";
+$numero = 5.5; //No es necesario identificar el tipo de dato porque php lo asocia
 var_dump($numero);
-
-$login=False;
-
+echo "<br>";
+$login = False;
 var_dump($login);
-
+echo "<br>";
 //Arreglos indexados
-$carrito=[];
-$edades=array();
-$carrito=['Plasma', 'Celular', 'Tablet','TV'];
+$carrito = [];
+echo "<br>";
+$edades = array();
+echo "<br>";
+$carrito = ['Plasma', 'Celular', 'Tablet', 'TV'];
+echo "<br>";
 var_dump($carrito[1]);
-?>
+echo "<br>";
+array_push($carrito, 'audifonos');
+var_dump($carrito);
+echo "<br>";
+array_unshift($carrito, 'SmartWatch');
+var_dump($carrito);
+
+//Arreglo asociativo
+$cliente = [
+    'nombre' => 'Juan',
+    'apellido' => 'Perez',
+    'información' => [
+        'tipo' => 'vip'
+
+    ]
+];
+echo "<br>";
+echo $cliente['nombre'];
+echo "<br>";
+echo $cliente['apellido'];
+echo "<br>";
+$cliente['código']=278;
+var_dump($cliente);
+
