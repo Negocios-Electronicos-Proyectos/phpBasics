@@ -11,7 +11,6 @@ echo "<br>";
 //Tercera forma de impresión
 print_r("Hola mundo 3");
 echo "<br>";
-
 var_dump("Hola mundo");
 echo "<br>";
 $numero = 5.5; //No es necesario identificar el tipo de dato porque php lo asocia
@@ -20,13 +19,11 @@ echo "<br>";
 $login = False;
 var_dump($login);
 echo "<br>";
+
 //Arreglos indexados
 $carrito = [];
-echo "<br>";
 $edades = array();
-echo "<br>";
 $carrito = ['Plasma', 'Celular', 'Tablet', 'TV'];
-echo "<br>";
 var_dump($carrito[1]);
 echo "<br>";
 array_push($carrito, 'audifonos');
@@ -41,9 +38,9 @@ $cliente = [
     'apellido' => 'Perez',
     'información' => [
         'tipo' => 'vip'
-
     ]
 ];
+
 echo "<br>";
 echo $cliente['nombre'];
 echo "<br>";
@@ -51,4 +48,5 @@ echo $cliente['apellido'];
 echo "<br>";
 $cliente['código']=278;
 var_dump($cliente);
+
 
